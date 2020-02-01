@@ -3,6 +3,7 @@ from selenium import webdriver
 import time
 from Pages.home_page import Home_Page
 from Pages.login_page import Login_Page
+import HtmlTestRunner
 
 class login_test(unittest.TestCase):
     
@@ -35,4 +36,4 @@ class login_test(unittest.TestCase):
         print("Quit")
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:/Users/zanba/OneDrive/Desktop/Project/Page Object Model/Reports"))
